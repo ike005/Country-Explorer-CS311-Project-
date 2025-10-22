@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Country Explorer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav id="top-nav">
+            <h1>Country Explorer</h1>
+            <div id="search-bar-container">
+                <div id="search-icon-box">
+                    <img src="./components/search_icon.svg" alt="search icon"/>
+                </div>
+                <input type="text" id="search-bar" placeholder="Search">
+            </div>
+        </nav>
+
+        <div id="alphabet-container">
+        </div>
+
+        <iframe src="./countryDetails.html" style="width: 100%; height: 100%; border: none; display: block"></iframe>
+
+        <div id="countries-initial-dashboard">
+            <div class="country-info-container">
+                <div class="flag-container">
+                    <img src="https://cdn.britannica.com/33/4833-050-F6E415FE/Flag-United-States-of-America.jpg" alt="" class="flag-image" />
+                </div>
+
+                <div class="country-info">
+                    <h2>United States</h2>
+                    <p>Washington DC</p>
+                    <p>In God We Trust</p>
+                </div>
+
+                <a href="#" class="country-link">
+                    <img src="./components/arrow_icon.svg" alt="arrow icon" />
+                </a>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

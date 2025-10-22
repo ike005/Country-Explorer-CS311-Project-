@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F6F7F8;
+    font-family: "Roboto", sans-serif;
+    margin: auto;
+
+    #top-nav{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+
+        h1{
+            font-size: 1.6rem;
+        }
+
+        #search-bar-container{
+            display: flex;
+            flex-direction: row;
+
+            #search-icon-box{
+                padding: 0.5rem;
+                background-color: #F6F7F8;
+                border-top-left-radius: 0.5rem;
+                border-bottom-left-radius: 0.5rem;
+            }
+
+            #search-bar{
+                border: none;
+                background-color: #F6F7F8;
+                padding: 0.5rem;
+                border-top-right-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+                outline: none;
+            }
+
+            #search-bar::placeholder{
+                color: black;
+            }
+
+        }
+    }
+
+    #alphabet-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin: 2.6rem 0;
+        padding: 0 6rem;
+
+        .letters{
+            background-color: white;
+            padding: 0.6rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+        }
+
+        .letters:hover{
+            background-color: aqua;
+            color: white;
+            cursor: pointer;
+        }
+
+        .letters:active{
+            background-color: aqua;
+            color: white;
+        }
+    }
+
+    #countries-initial-dashboard{
+        border: 3px solid yellow;
+        height: 70vh;
+        padding: 1rem 2px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+
+        .country-info-container{
+            background-color: white;
+            width: 22rem;
+            height: 8rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0.5rem;
+            padding: 1.2rem;
+            border: 2px solid #F0F1F2;
+
+
+
+            .flag-container{
+                width: 50%;
+                height: 100%;
+                border-radius: 0.5rem;
+
+                .flag-image{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .country-info{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                h2{
+                    color: black;
+                    font-size: 1.2rem;
+                }
+
+                p{
+                    color: #627C89;
+                    font-size: 1rem;
+                }
+            }
+
+            .country-info:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
