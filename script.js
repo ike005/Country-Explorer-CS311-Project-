@@ -22,11 +22,11 @@ function createAlphabetButtonsAndHandleButtonClicks() {
 createAlphabetButtonsAndHandleButtonClicks();
 
 userInput.addEventListener("input", () => {
-    const userInput = userInput.value.trim();
-    if (userInput.length > 0) {
-        getCountryData(userInput);
+    const userQuery = userInput.value.trim();
+    if (userQuery.length > 0) {
+        getCountryData(userQuery);
     } else {
-        countryDashboard.innerHTML = "<p>Type a country name and select an alphabet</p>";
+        countryDashboard.innerHTML = "<p>Type a country name or select an alphabet</p>";
     }
 });
 
