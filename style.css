@@ -76,8 +76,7 @@ body{
     }
 
     #countries-initial-dashboard{
-        border: 3px solid yellow;
-        height: 70vh;
+        height: fit-content;
         padding: 1rem 2px;
         display: flex;
         flex-direction: row;
@@ -94,6 +93,7 @@ body{
             flex-wrap: nowrap;
             justify-content: space-between;
             align-items: center;
+            gap: 1rem;
             border-radius: 0.5rem;
             padding: 1.2rem;
             border: 2px solid #F0F1F2;
